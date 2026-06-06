@@ -1,6 +1,6 @@
 name: is_ipad
 description: "A Flutter plugin to check if the current device is an iPad."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/flutter-cavalry/is_ipad
 
 environment:

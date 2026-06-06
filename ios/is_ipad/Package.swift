@@ -6,16 +6,20 @@ import PackageDescription
 let package = Package(
     name: "is_ipad",
     platforms: [
-        .iOS("12.0")
+        .iOS("13.0")
     ],
     products: [
         .library(name: "is-ipad", targets: ["is_ipad"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "FlutterFramework", path: "../FlutterFramework")
+    ],
     targets: [
         .target(
             name: "is_ipad",
-            dependencies: [],
+            dependencies: [
+                .product(name: "FlutterFramework", package: "FlutterFramework")
+            ],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it uses any required
                 // reason APIs, update the PrivacyInfo.xcprivacy file to describe your plugin's
